@@ -43,18 +43,17 @@ namespace ConsoleHelloWorld
             //    Console.Write("{0} {1}", result, result / 2);
             //}
 
-            string sentence = "Want to learn a different programming language? C# is a great place to start.";
-            //char[] charArray = sentence.ToArray();
-            char[] charArray = sentence.ToCharArray();
-            for (int i = 0; i < charArray.Length; i++)
-            {
-                Console.Write(charArray[i]);
-            }
+            //string sentence = "Want to learn a different programming language? C# is a great place to start.";
+            ////char[] charArray = sentence.ToArray();
+            //char[] charArray = sentence.ToCharArray();
+            //for (int i = 0; i < charArray.Length; i++)
+            //{
+            //    Console.Write(charArray[i]);
+            //}
 
             //Console.Write((int)Console.ReadKey().KeyChar);
             //
             Console.ReadKey();
-
         }
     }
 }
