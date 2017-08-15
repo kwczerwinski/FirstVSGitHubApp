@@ -31,21 +31,29 @@ namespace ConsoleHelloWorld
             //if ((keyCode > -1) && (keyCode < 10))
             //    Console.Write("{0} {1}", keyCode, keyCode / 2);
 
-            int keyCode = 0, result = 0;
-            while(keyCode != 13)
+            //int keyCode = 0, result = 0;
+            //while (keyCode != 13)
+            //{
+            //    keyCode = Console.ReadKey().KeyChar;
+            //    if ((keyCode > 47) && (keyCode < 58))
+            //        result = result * 10 + keyCode - 48;
+            //    else if (keyCode == 8)
+            //        result = result / 10;
+            //    Console.Clear();
+            //    Console.Write("{0} {1}", result, result / 2);
+            //}
+
+            string sentence = "Want to learn a different programming language? C# is a great place to start.";
+            //char[] charArray = sentence.ToArray();
+            char[] charArray = sentence.ToCharArray();
+            for (int i = 0; i < charArray.Length; i++)
             {
-                keyCode = Console.ReadKey().KeyChar;
-                if ((keyCode > 47) && (keyCode < 58))
-                    result = result * 10 + keyCode - 48;
-                else if(keyCode == 8)
-                    result = result / 10;
-                Console.Clear();
-                Console.Write("{0} {1}", result, result/2);
+                Console.Write(charArray[i]);
             }
 
             //Console.Write((int)Console.ReadKey().KeyChar);
-
-            //Console.ReadKey();
+            //
+            Console.ReadKey();
 
         }
     }
